@@ -1,0 +1,32 @@
+<head >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="precache.css">
+<script src="precache.js"></script>
+    <script>
+precache.go(
+"http://www.google.com",true,
+[
+    "http://images.huffingtonpost.com/2015-12-23-1450895141-5774790-food02.jpg",
+    "http://weknowyourdreams.com/images/food/food-03.jpg",
+    "http://www.charterforcompassion.org/images/menus/communities/best-food.jpg",
+    "http://www.technobuffalo.com/wp-content/uploads/2014/04/fast-food.jpg",
+    "http://www.whateverthatdoesntexist.com/notreal.jpg"
+],true,precache.dropdown);
+    </script>
+</head>
+<body>
+    <div id="precache">
+        <center>
+            <h2>Loading <span id="swap_complete">Images</span></h2>
+            <span id="dots">
+                <span id="dot1">.</span>
+                <span id="dot2">.</span>
+                <span id="dot3">.</span>
+                <span id="dot4">.</span>
+                <span id="dot5">.</span>
+            </span>
+        </center>
+        <div id="precacheProgress">
+        </div>
+    </div>
+</body>
